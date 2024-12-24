@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>City Light</title>
+    <link
+      rel="shortcut icon"
+      href="images/logo-removebg-preview.png"
+      type="image/x-icon"
+    />
+    <!-- Google fonts cairo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Swiper Library -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Main Template css File -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header class="sticky">
+      <div class="discount">
+        <div class="right">
+          <a href="#"> <img src="images/en.png" alt="" />ENGLISH</a>
+          <p>خصم إضافي 10% على طلبك! كود خصم: BF10</p>
+        </div>
+        <div class="left">
+          <span class="user" href="" id="user-open">حسابى</span>
+          <div class="icons-m">
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="header-top">
+          <div class="icons">
+            <div class="cart" id="cart">
+              <span> <span class="price">0</span> ر.س</span>
+              <span class="top">
+                <i class="fa-solid fa-cart-shopping"></i
+              ></span>
+            </div>
+            <a class="top"><i class="fa-solid fa-heart heart"></i></a>
+          </div>
+          <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="ابحث عن المنتجات...." />
+          </div>
+          <div class="language">
+            <a class="holder" id="lang-active">
+              <img src="images/Flag_of_Saudi_Arabia.svg-150x150.png" alt="" />
+              <p>السعودية</p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </a>
+            <div class="box">
+              <a class="lang" id="lang-en">
+                <img src="images/en.png" alt="" />
+                <p>ENGLISH</p>
+              </a>
+              <a class="lang" id="lang-ar">
+                <img src="images/Flag_of_Saudi_Arabia.svg-150x150.png" alt="" />
+                <p>السعودية</p>
+              </a>
+            </div>
+          </div>
+          <div class="log">
+            <a href="index.html"
+              ><img src="images/logo-removebg-preview.png" alt="logo photo"
+            /></a>
+          </div>
+          <button id="btn-toggle" data-expanded="false">
+            <p>القائمة</p>
+            <span class="nav-toggler-icon"> </span>
+          </button>
+        </div>
+
+        <div class="header-bottom">
+          <ul>
+            <li>
+              <a href="">ثريات<i class="fa-solid fa-chevron-down"></i></a>
+              <ul class="list-n">
+                <li>
+                  <a href=""
+                    ><img
+                      src="images/led-ch-150x150-1-58x58-optimized.jpg"
+                      alt="photo"
+                    />
+                    كل النجف</a
+                  >
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="images/led-ch-150x150-1-58x58-optimized.jpg"
+                      alt="photo"
+                    />
+                    كل النجف</a
+                  >
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="images/led-ch-150x150-1-58x58-optimized.jpg"
+                      alt="photo"
+                    />
+                    كل النجف</a
+                  >
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="images/led-ch-150x150-1-58x58-optimized.jpg"
+                      alt="photo"
+                    />
+                    كل النجف</a
+                  >
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="images/led-ch-150x150-1-58x58-optimized.jpg"
+                      alt="photo"
+                    />
+                    كل النجف</a
+                  >
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="images/led-ch-150x150-1-58x58-optimized.jpg"
+                      alt="photo"
+                    />
+                    كل النجف</a
+                  >
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="images/led-ch-150x150-1-58x58-optimized.jpg"
+                      alt="photo"
+                    />
+                    كل النجف</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="">إنارة سقف<i class="fa-solid fa-chevron-down"></i></a>
+            </li>
+            <li>
+              <a href="">مراوح سقف<i class="fa-solid fa-chevron-down"></i></a>
+            </li>
+            <li>
+              <a href=""
+                >سبوت و تراك لايت<i class="fa-solid fa-chevron-down"></i
+              ></a>
+            </li>
+            <li>
+              <a href=""
+                >مصابيح طاولة و أرضية<i class="fa-solid fa-chevron-down"></i
+              ></a>
+            </li>
+            <li>
+              <a href=""> إنارة جدار<i class="fa-solid fa-chevron-down"></i></a>
+            </li>
+            <li>
+              <a href=""
+                >إنارة خارجية<i class="fa-solid fa-chevron-down"></i
+              ></a>
+            </li>
+            <li>
+              <a href=""
+                >إنارة للأطفال<i class="fa-solid fa-chevron-down"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">لمبات<i class="fa-solid fa-chevron-down"></i></a>
+            </li>
+          </ul>
+          <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="ابحث عن المنتجات...." />
+          </div>
+        </div>
+      </div>
+      <!-- Start main menu -->
+      <div class="main-menu">
+        <div class="search">
+          <input type="text" placeholder="ابحث عن منتجات..." />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <ul>
+          <li><a href="">الرئيسية</a></li>
+          <li><a href="">احدث المنتجات</a></li>
+          <li><a href="">المنتجات</a></li>
+          <li><a href="">عروض</a></li>
+          <li><a href="">احدث المنتجات</a></li>
+          <li class="country">
+            <span>تغير الدولة<i class="fa-solid fa-chevron-down"></i> </span>
+            <ul id="country-menu">
+              <li>
+                <a class="lang">
+                  <img src="images/en.png" alt="" />
+                  <p>ENGLISH</p>
+                </a>
+              </li>
+              <li>
+                <a class="lang">
+                  <img
+                    src="images/Flag_of_Saudi_Arabia.svg-150x150.png"
+                    alt=""
+                  />
+                  <p>السعودية</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="">اتصل بينا</a></li>
+          <li>
+            <a href=""><i class="fa-solid fa-heart heart"></i>التفضيلات </a>
+          </li>
+          <li>
+            <span id="btn-menu-user">
+              <i class="fa-regular fa-user"></i>حسابى
+            </span>
+          </li>
+        </ul>
+      </div>
+      <!-- Start main menu -->
+
+      <!-- Start User menu -->
+      <div class="user-account" id="user-account">
+        <h4>
+          تسجيل الدخول<span id="close-btn"
+            ><i class="fa-solid fa-xmark"></i>اغلق</span
+          >
+        </h4>
+
+        <form action="">
+          <div class="name">
+            <label for="user">إسم المستخدم او البريد الإليكتروني </label>
+            <input type="text" name="user" id="user" />
+          </div>
+          <div class="pass">
+            <label for="password">كلمة السر </label>
+            <input type="password" name="password" id="password" />
+          </div>
+          <button>تسجيل الدخول</button>
+          <div class="end">
+            <label for="remember">
+              <input type="checkbox" name="remeber" id="remeber" />
+              تذكرني
+            </label>
+            <a href="#">نسيت كلمه السر؟</a>
+          </div>
+          <div class="new-user">
+            <i class="fa-regular fa-user"></i>
+            <span>ليس لديك حساب؟</span>
+            <a href="">سجل حساب جديد</a>
+          </div>
+        </form>
+      </div>
+      <!-- End User menu -->
+
+      <!-- Start cart menu -->
+      <div class="user-cart" id="user-cart">
+        <h4>
+          سلة المشتريات<span id="close-btn-cart"
+            ><i class="fa-solid fa-xmark"></i>اغلق</span
+          >
+        </h4>
+
+        <div class="content">
+          <p>لا يوجد منتجات فى سله المشتريات</p>
+          <button id="btn-cart-back">العوده للتسوق</button>
+        </div>
+      </div>
+
+      <!-- End cart menu -->
+
+      <!-- layer to hidden content behind the meun -->
+      <div id="layer" class="layer"></div>
+    </header>
+
+    <!-- start banner section -->
+    <section class="banner">
+      <div class="container">
+        <div class="banner-cont">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#"><img src="images/banner1.jpg" alt="Image 1" /></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#"><img src="images/banar-7.jpg" alt="Image 2" /></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#"><img src="images/banar3.jpg" alt="Image 3" /></a>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <!-- Pagination -->
+          </div>
+
+          <div class="left-image">
+            <a href="#"><img src="images/banar5.jpg" alt="" /></a>
+
+            <a href="#"><img src="images/banar-6.jpg" alt="" /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End banner section -->
+
+    <!-- Start categories -->
+
+    <div class="categories">
+      <div class="container">
+        <h2>تسوق الاقسام</h2>
+        <div class="all">
+          <div class="box">
+            <a href="category.html"
+              ><img src="images/لمبات.png" alt="" />
+              <h3>لمبات</h3></a
+            >
+          </div>
+          <div class="box">
+            <a href="category.html"
+              ><img src="images/تراك لايت.png" alt="" />
+              <h3>نجف</h3></a
+            >
+          </div>
+          <div class="box">
+            <a href="category.html"
+              ><img src="images/لمبات.png" alt="" />
+              <h3>لمبات</h3></a
+            >
+          </div>
+          <div class="box">
+            <a href="category.html"
+              ><img src="images/تراك لايت.png" alt="" />
+              <h3>نجف</h3></a
+            >
+          </div>
+          <div class="box">
+            <a href="category.html"
+              ><img src="images/لمبات.png" alt="" />
+              <h3>لمبات</h3></a
+            >
+          </div>
+          <div class="box">
+            <a href="category.html"
+              ><img src="images/تراك لايت.png" alt="" />
+              <h3>نجف</h3></a
+            >
+          </div>
+          <div class="box">
+            <a href="category.html"
+              ><img src="images/لمبات.png" alt="" />
+              <h3>لمبات</h3></a
+            >
+          </div>
+          <div class="box">
+            <a href="category.html"
+              ><img src="images/تراك لايت.png" alt="" />
+              <h3>نجف</h3></a
+            >
+          </div>
+          <div class="box">
+            <a href="category.html"
+              ><img src="images/لمبات.png" alt="" />
+              <h3>لمبات</h3></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End categories -->
+
+    <!-- Start about us -->
+    <div class="about">
+      <div class="container">
+        <h3>من نحن !</h3>
+        <div class="content">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/zFSNh7S9U9Q"
+            title="Hamid El Shari #60 SE6 | حوارات مع عباس - حميد الشاعري"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen=""
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <!-- End about us -->
+
+    <!-- Start ads -->
+    <div class="ads">
+      <div class="container">
+        <div class="right">
+          <img src="images/banar3.jpg" alt="" />
+          <img src="images/banar5.jpg" alt="" />
+        </div>
+
+        <div class="left">
+          <img src="images/banar2.jpg" alt="" />
+          <img src="images/banner1.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- End ads -->
+
+    <!-- Start features -->
+    <div class="features">
+      <div class="container">
+        <h3>منتجات مميزه</h3>
+        <div class="buttons">
+          <h4>أحدث المنتجات</h4>
+          <h4>الأكثر مبيعاً</h4>
+          <h4>تخفيضات</h4>
+        </div>
+        <div class="products">
+          <div class="box">
+            <div class="image">
+              <img src="images/fe-1.jpg" alt="" />
+              <span class="discount"> -34%</span>
+              <i class="fa-solid fa-heart heart"></i>
+              <i class="fa-solid fa-magnifying-glass quick-look"></i>
+            </div>
+            <p>أباجورة تيمورا 1 لمبة أسود</p>
+            <p>
+              <span class="total"
+                ><bdo dir="ltr"
+                  ><span class="price"> 747 EGP</span> <del>1,099 EGP</del></bdo
+                ></span
+              >
+            </p>
+            <button>اضف الى السله</button>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img src="images/fe-2.jpg" alt="" />
+              <span class="discount"> -34%</span>
+              <i class="fa-solid fa-heart heart"></i>
+              <i class="fa-solid fa-magnifying-glass quick-look"></i>
+            </div>
+            <p>أباجورة تيمورا 1 لمبة أسود</p>
+            <p>
+              <span class="total"
+                ><bdo dir="ltr"
+                  ><span class="price"> 747 EGP</span> <del>1,099 EGP</del></bdo
+                ></span
+              >
+            </p>
+            <button>اضف الى السله</button>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img src="images/fe-3.jpg" alt="" />
+              <span class="discount"> -34%</span>
+              <i class="fa-solid fa-heart heart"></i>
+              <i class="fa-solid fa-magnifying-glass quick-look"></i>
+            </div>
+            <p>أباجورة تيمورا 1 لمبة أسود</p>
+            <p>
+              <span class="total"
+                ><bdo dir="ltr"
+                  ><span class="price"> 747 EGP</span> <del>1,099 EGP</del></bdo
+                ></span
+              >
+            </p>
+            <button>اضف الى السله</button>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img src="images/fe-1.jpg" alt="" />
+              <span class="discount"> -34%</span>
+              <i class="fa-solid fa-heart heart"></i>
+              <i class="fa-solid fa-magnifying-glass quick-look"></i>
+            </div>
+            <p>أباجورة تيمورا 1 لمبة أسود</p>
+            <p>
+              <span class="total"
+                ><bdo dir="ltr"
+                  ><span class="price"> 747 EGP</span> <del>1,099 EGP</del></bdo
+                ></span
+              >
+            </p>
+            <button>اضف الى السله</button>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img src="images/fe-2.jpg" alt="" />
+              <span class="discount"> -34%</span>
+              <i class="fa-solid fa-heart heart"></i>
+              <i class="fa-solid fa-magnifying-glass quick-look"></i>
+            </div>
+            <p>أباجورة تيمورا 1 لمبة أسود</p>
+            <p>
+              <span class="total"
+                ><bdo dir="ltr"
+                  ><span class="price"> 747 EGP</span> <del>1,099 EGP</del></bdo
+                ></span
+              >
+            </p>
+            <button>اضف الى السله</button>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img src="images/fe-3.jpg" alt="" />
+              <span class="discount"> -34%</span>
+              <i class="fa-solid fa-heart heart"></i>
+              <i class="fa-solid fa-magnifying-glass quick-look"></i>
+            </div>
+            <p>أباجورة تيمورا 1 لمبة أسود</p>
+            <p>
+              <span class="total"
+                ><bdo dir="ltr"
+                  ><span class="price"> 747 EGP</span> <del>1,099 EGP</del></bdo
+                ></span
+              >
+            </p>
+            <button>اضف الى السله</button>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img src="images/fe-2.jpg" alt="" />
+              <span class="discount"> -34%</span>
+              <i class="fa-solid fa-heart heart"></i>
+              <i class="fa-solid fa-magnifying-glass quick-look"></i>
+            </div>
+            <p>أباجورة تيمورا 1 لمبة أسود</p>
+            <p>
+              <span class="total"
+                ><bdo dir="ltr"
+                  ><span class="price"> 747 EGP</span> <del>1,099 EGP</del></bdo
+                ></span
+              >
+            </p>
+            <button>اضف الى السله</button>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img src="images/fe-3.jpg" alt="" />
+              <span class="discount"> -34%</span>
+              <i class="fa-solid fa-heart heart"></i>
+              <i class="fa-solid fa-magnifying-glass quick-look"></i>
+            </div>
+            <p>أباجورة تيمورا 1 لمبة أسود</p>
+            <p>
+              <span class="total"
+                ><bdo dir="ltr"
+                  ><span class="price"> 747 EGP</span> <del>1,099 EGP</del></bdo
+                ></span
+              >
+            </p>
+            <button>اضف الى السله</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End features -->
+
+    <!-- Start Popup details -->
+    <div class="popup-container" id="popup-quick">
+      <div id="layer-popup" class="layer"></div>
+      <div class="popup">
+        <div class="images">
+          <img src="images/1090010001151009-1.jpg" alt="" />
+          <button>view details</button>
+        </div>
+        <div class="details">
+          <h4>ثريا بومب 16 لمبة ذهبي</h4>
+          <img src="images/dlight.png" alt="brand-image" />
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+
+            <i class="fa-regular fa-star"></i>
+            <p>( <span>1</span>تقييم العملاء )</p>
+          </div>
+          <div class="price">
+            <p><del>817 ر.س</del> <span>480 ر.س</span></p>
+          </div>
+          <ul class="features-prod">
+            <li>ضمان سنة من سيتى لايت ضد عيوب الصناعة.</li>
+            <li>استرجاع مجاني خلال ١٤ يوم من تاريخ الاستلام.</li>
+            <li>سعر المنتج لا يشمل اللمبات.</li>
+          </ul>
+
+          <div class="availability"><i class="fa-solid fa-check"></i>متوفر</div>
+
+          <div class="amount">
+            <div class="counter">
+              <button id="popup-decrement">-</button>
+              <p id="popup-count">1</p>
+              <button id="popup-increment">+</button>
+            </div>
+            <button>اضف الى السله</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Popup details -->
+
+    <!-- Start New Arrival -->
+    <div class="arrival">
+      <div class="container">
+        <h2>أحدث المنتجات</h2>
+        <div class="content">
+          <div class="swiper-new-arrival">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="box">
+                  <img src="images/new-3.png" alt="Image 1" />
+                  <h4><bdo dir="ltr">spot light</bdo></h4>
+                  <button>اضف الى السله</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                  <img src="images/new-1.png" alt="Image 2" />
+                  <h4><bdo dir="ltr">spot light</bdo></h4>
+                  <button>اضف الى السله</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                  <img src="images/new-2.png" alt="Image 3" />
+                  <h4><bdo dir="ltr">spot light</bdo></h4>
+                  <button>اضف الى السله</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                  <img src="images/new-3.png" alt="" />
+                  <h4><bdo dir="ltr">spot light</bdo></h4>
+                  <button>اضف الى السله</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                  <img src="images/new-4.png" alt="Image 5" />
+                  <h4><bdo dir="ltr">spot light</bdo></h4>
+                  <button>اضف الى السله</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                  <img src="images/new-1.png" alt="Image 1" />
+                  <h4><bdo dir="ltr">spot light</bdo></h4>
+                  <button>اضف الى السله</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                  <img src="images/new-2.png" alt="Image 2" />
+                  <h4><bdo dir="ltr">spot light</bdo></h4>
+                  <button>اضف الى السله</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                  <img src="images/new-3.png" alt="Image 3" />
+                  <h4><bdo dir="ltr">spot light</bdo></h4>
+                  <button>اضف الى السله</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                  <img src="images/new-3.png" alt="" />
+                  <h4><bdo dir="ltr">spot light</bdo></h4>
+                  <button>اضف الى السله</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                  <img src="images/new-5.png" alt="Image 5" />
+                  <h4><bdo dir="ltr">spot light</bdo></h4>
+                  <button>اضف الى السله</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Navigation buttons -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+
+          <div class="banner-new">
+            <img src="images/left-ads.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End New Arrival -->
+
+    <!-- Start best seller -->
+    <div class="seller">
+      <div class="container">
+        <h2>الاكتر مبيعا</h2>
+        <div class="content">
+          <div class="banner-new">
+            <img src="images/left-ads.png" alt="" />
+          </div>
+
+          <div class="swiper-new-arrival">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="box">
+                  <img src="images/new-3.png" alt="Image 1" />
+                  <h4><bdo dir="ltr">spot light</bdo></h4>
+                  <button>اضف الى السله</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                  <img src="images/new-1.png" alt="Image 2" />
+                  <h4><bdo dir="ltr">spot light</bdo></h4>
+                  <button>اضف الى السله</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                  <img src="images/new-2.png" alt="Image 3" />
+                  <h4><bdo dir="ltr">spot light</bdo></h4>
+                  <button>اضف الى السله</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                  <img src="images/new-3.png" alt="" />
+                  <h4><bdo dir="ltr">spot light</bdo></h4>
+                  <button>اضف الى السله</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                  <img src="images/new-4.png" alt="Image 5" />
+                  <h4><bdo dir="ltr">spot light</bdo></h4>
+                  <button>اضف الى السله</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                  <img src="images/new-1.png" alt="Image 1" />
+                  <h4><bdo dir="ltr">spot light</bdo></h4>
+                  <button>اضف الى السله</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                  <img src="images/new-2.png" alt="Image 2" />
+                  <h4><bdo dir="ltr">spot light</bdo></h4>
+                  <button>اضف الى السله</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                  <img src="images/new-3.png" alt="Image 3" />
+                  <h4><bdo dir="ltr">spot light</bdo></h4>
+                  <button>اضف الى السله</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                  <img src="images/new-3.png" alt="" />
+                  <h4><bdo dir="ltr">spot light</bdo></h4>
+                  <button>اضف الى السله</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                  <img src="images/new-5.png" alt="Image 5" />
+                  <h4><bdo dir="ltr">spot light</bdo></h4>
+                  <button>اضف الى السله</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Navigation buttons -->
+            <div class="swiper-button-next next-seller"></div>
+            <div class="swiper-button-prev prev-seller"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End New Arrival -->
+
+    <!-- Start articles -->
+    <div class="articles">
+      <div class="container">
+        <h3>المقالات</h3>
+
+        <div class="content">
+          <div class="swiper-articles">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="box">
+                  <img src="images/banner1.jpg" alt="Image 1" />
+                  <h4>الاضاءه المناسبه للمذكره</h4>
+                  <p>
+                    للإضاءة تأثير كبير على الدراسة والتحصيل، حيث أنها عامل مهم
+                    للتركيز والفهم. ليس هذا فقط،
+                  </p>
+                  <p>اكمل القراءه</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                  <img src="images/banar2.jpg" alt="Image 2" />
+                  <h4>الاضاءه المناسبه للمذكره</h4>
+                  <p>
+                    للإضاءة تأثير كبير على الدراسة والتحصيل، حيث أنها عامل مهم
+                    للتركيز والفهم. ليس هذا فقط،
+                  </p>
+                  <p>اكمل القراءه</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                  <img src="images/banar-8.jpg" alt="Image 3" />
+                  <h4>الاضاءه المناسبه للمذكره</h4>
+                  <p>
+                    للإضاءة تأثير كبير على الدراسة والتحصيل، حيث أنها عامل مهم
+                    للتركيز والفهم. ليس هذا فقط،
+                  </p>
+                  <p>اكمل القراءه</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                  <img src="images/banner1.jpg" alt="" />
+                  <h4>الاضاءه المناسبه للمذكره</h4>
+                  <p>
+                    للإضاءة تأثير كبير على الدراسة والتحصيل، حيث أنها عامل مهم
+                    للتركيز والفهم. ليس هذا فقط،
+                  </p>
+                  <p>اكمل القراءه</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                  <img src="images/banar5.jpg" alt="Image 5" />
+                  <h4>الاضاءه المناسبه للمذكره</h4>
+                  <p>
+                    للإضاءة تأثير كبير على الدراسة والتحصيل، حيث أنها عامل مهم
+                    للتركيز والفهم. ليس هذا فقط،
+                  </p>
+                  <p>اكمل القراءه</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                  <img src="images/banner1.jpg" alt="Image 1" />
+                  <h4>الاضاءه المناسبه للمذكره</h4>
+                  <p>
+                    للإضاءة تأثير كبير على الدراسة والتحصيل، حيث أنها عامل مهم
+                    للتركيز والفهم. ليس هذا فقط،
+                  </p>
+                  <p>اكمل القراءه</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                  <img src="images/banar2.jpg" alt="Image 2" />
+                  <h4>الاضاءه المناسبه للمذكره</h4>
+                  <p>
+                    للإضاءة تأثير كبير على الدراسة والتحصيل، حيث أنها عامل مهم
+                    للتركيز والفهم. ليس هذا فقط،
+                  </p>
+                  <p>اكمل القراءه</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                  <img src="images/banar-8.jpg" alt="Image 3" />
+                  <h4>الاضاءه المناسبه للمذكره</h4>
+                  <p>
+                    للإضاءة تأثير كبير على الدراسة والتحصيل، حيث أنها عامل مهم
+                    للتركيز والفهم. ليس هذا فقط،
+                  </p>
+                  <p>اكمل القراءه</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                  <img src="images/banner1.jpg" alt="" />
+                  <h4>الاضاءه المناسبه للمذكره</h4>
+                  <p>
+                    للإضاءة تأثير كبير على الدراسة والتحصيل، حيث أنها عامل مهم
+                    للتركيز والفهم. ليس هذا فقط،
+                  </p>
+                  <p>اكمل القراءه</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                  <img src="images/banar5.jpg" alt="Image 5" />
+                  <h4>الاضاءه المناسبه للمذكره</h4>
+                  <p>
+                    للإضاءة تأثير كبير على الدراسة والتحصيل، حيث أنها عامل مهم
+                    للتركيز والفهم. ليس هذا فقط،
+                  </p>
+                  <p>اكمل القراءه</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Navigation buttons -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End articles -->
+
+    <!-- Start services -->
+    <div class="services">
+      <div class="box">
+        <img src="images/استبدال.png" alt="" />
+        <h4>الإستبدال و الإسترجاع</h4>
+      </div>
+      <div class="box">
+        <img src="images/خدمه.png" alt="" />
+        <h4>خدمة العملاء</h4>
+      </div>
+      <div class="box">
+        <img src="images/دفع.png" alt="" />
+        <h4>دفع أون لاين</h4>
+      </div>
+      <div class="box">
+        <img src="images/شحن.png" alt="" />
+        <h4>شحن مجاني</h4>
+      </div>
+    </div>
+
+    <!-- End services -->
+
+    <!-- Start footer -->
+    <div class="footer">
+      <div class="useful">
+        <h4>روابط مفيدة</h4>
+        <ul>
+          <li><a href="#">الأكثر مبيعا في إنارات</a></li>
+          <li><a href="#">ترشيحات إنارات</a></li>
+          <li><a href="#">أحدث المنتجات</a></li>
+        </ul>
+      </div>
+      <div class="quick">
+        <h4>روابط سريعة</h4>
+        <ul>
+          <li><a href="3">الرئيسية</a></li>
+          <li><a href="#">عن إنارات</a></li>
+          <li><a href="#">المقالات</a></li>
+          <li><a href="#">سياسة إنارات</a></li>
+        </ul>
+      </div>
+
+      <div class="about-footer">
+        <h2>سيتى لايت</h2>
+        <p>
+          سيتى لايت أكبر متجر إلكتروني متخصص في بيع وحدات الإضاءة والديكور في
+          السعوديه. يمكنك أن تجد وتطلب كل احتياجاتك من وحدات الإضاءة والديكور في
+          مكان واحد في أي وقت ومن أي مكان مع التوصيل لأي مكان في مصر
+        </p>
+      </div>
+    </div>
+    <!-- End footer -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="java/main.js"></script>
+  </body>
+</html>
